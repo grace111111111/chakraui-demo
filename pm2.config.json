@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "chakraui-demo",
+      "script": "npm",
+      "args": "start"
+    }
+  ]
+}
