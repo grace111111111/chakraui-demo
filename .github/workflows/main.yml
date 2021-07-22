@@ -20,6 +20,7 @@ jobs:
     - run: npm run build
     - run: tar -zcvf release.tgz build package.json package-lock.json pm2.config.json
 
+
     # 发布 Release
     - name: Create Release
       id: create_release
@@ -55,5 +56,6 @@ jobs:
         script: |
           cd /root/lagou/4-3
           wget https://github.com/grace111111111/chakraui-demo/releases/latest/download/release.tgz -O release.tgz
+          tar zxvf release.tgz
           npm install --production
           pm2 reload pm2.config.json
