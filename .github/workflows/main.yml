@@ -54,7 +54,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /root/lagou/4-3
-          wget https://github.com/grace111111111/chakraui-demo/tree/main/chakraui-demo/releases/latest/download/release.tgz -O release.tgz
+          wget https://github.com/grace111111111/chakraui-demo/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
           npm install --production
           pm2 reload pm2.config.json
